@@ -22,7 +22,7 @@
     }
 }
 ```
-4. 在 `public` 目录下，新建 `diy.less` 文件，就可以在项目中使用 `less` 进行开发了，报错 `less` 文件后会自动生成 `diy.css` 文件到 `public/css` 目录下并自动热更新项目。
+4. 在 `public` 目录下，新建 `diy.less` 文件，就可以在项目中使用 `less` 进行开发了，保存 `less` 文件后会自动生成 `diy.css` 文件到 `public/css` 目录下并自动热更新项目。
 
 ### 项目启动
 

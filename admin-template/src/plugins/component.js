@@ -12,7 +12,7 @@ import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
 
-var host = "http://127.0.0.1/";
+var host = "http://203.195.195.169:5000/";
 
 export default {
 	/**

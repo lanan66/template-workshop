@@ -10,8 +10,7 @@ import echarts from './assets/js/echarts.min.js'
 Vue.config.productionTip = false;
 Vue.prototype.$axios = axios;
 Vue.use(plugins, {
-	host: "http://127.0.0.1:5000/",
-	// host: "http://localhost:5000/"
+	host: "http://203.195.195.169:5000/",
 });
 
 import JsonExcel from 'vue-json-excel'

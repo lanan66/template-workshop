@@ -9,11 +9,11 @@ module.exports = {
         hotOnly: false,
         proxy: {
             "~/api": {
-                target: "http://1.1.1.1:5000",
+                target: "http://http://203.195.195.169:5000",
                 ws: true,
                 changOrigin: true,
                 pathRewrite: {
-                    "^/api": "/"
+                    "^~/api": "/api"
                 }
             }
         }

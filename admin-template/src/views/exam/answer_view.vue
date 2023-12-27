@@ -6,7 +6,7 @@
 					<div class="title_margin" style="margin-bottom: 20px" v-if="score_state===0">未评分</div>
 					<div class="title_margin" style="margin-bottom: 20px" v-else>已评分，得分：<span style="color: red">{{answer_form.score}}</span></div>
 				</el-col>
-				<el-col v-for="(o,i) in question_list" :xs="24" :sm="24" :lg="24" class="el_form_item_warp">
+				<el-col v-for="(o,i) in question_list" :key="i" :xs="24" :sm="24" :lg="24" class="el_form_item_warp">
 					<div class="title_margin" v-if="o.type === '单选题'">
 						{{o.question_order+'.单选题：'+o.title+"   ("+o.score+"分)"}}
 						<span v-if="if_answered" class="score_show">--------{{answer_scores[i]}}分</span>
@@ -34,21 +34,21 @@
 						</span>
 					</div>
 					<el-form-item v-if="o.type === '单选题'" label="">
-						<el-radio :disabled="if_answered" v-for="q in get_question_list(o.question_item)" v-model="answers[i]" :label="q">{{q}}</el-radio>
+						<el-radio :disabled="if_answered" v-for="(q, i) in get_question_list(o.question_item)" v-model="answers[i]" :key="i" :label="q">{{q}}</el-radio>
 						<div class="score_show" v-if="if_answered && reference_answers[i]">
 							参考答案：{{reference_answers[i]}}
 						</div>
 					</el-form-item>
 					<el-form-item v-else-if="o.type === '多选题'" label="">
 						<el-checkbox-group :disabled="if_answered" v-model="answers[i]">
-							<el-checkbox v-for="q in get_question_list(o.question_item)" :label="q"></el-checkbox>
+							<el-checkbox v-for="(q, i) in get_question_list(o.question_item)" :key="i" :label="q"></el-checkbox>
 						</el-checkbox-group>
 						<div class="score_show" v-if="if_answered && reference_answers[i]">
 							参考答案：{{reference_answers[i]}}
 						</div>
 					</el-form-item>
 					<el-form-item v-else-if="o.type === '判断题'" label="">
-						<el-radio :disabled="if_answered" v-for="q in get_question_list(o.question_item)" v-model="answers[i]" :label="q">{{q}}</el-radio>
+						<el-radio :disabled="if_answered" v-for="(q, i) in get_question_list(o.question_item)" :key="i" v-model="answers[i]" :label="q">{{q}}</el-radio>
 						<div class="score_show" v-if="if_answered && reference_answers[i]">
 							参考答案：{{reference_answers[i]}}
 						</div>

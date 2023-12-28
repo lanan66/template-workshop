@@ -6,7 +6,7 @@ html, body, #app, .page, .sign_in .warp .el-row .el-col.el-col-24,
 html, body, #app, .page {
   height: 100%;
   --bg1: #fff;
-  --bg2: #9fe080;
+  --bg2: #f2b9b9;
   --textColor1: #12c294;
 }
 ::-webkit-scrollbar-thumb{
@@ -41,10 +41,16 @@ html, body, #app, .page {
   flex-direction: column;
   height: 100%;
 }
+
+
+
 /* 登录 */
 .sign_in {
   padding: 0 !important;
+  background: url(../img/bgimg.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
 }
+/* 大字标题 */
 .sign_in h1 {
   font-size: 22px;
   color: #fff;
@@ -53,16 +59,29 @@ html, body, #app, .page {
   width: 200px;
   left: 75px;
   top: 50%;
+  margin-bottom: 20px;
   transform: translateY(-50%);
+  background: linear-gradient(to right,#7a7f8b, #bebccb, #febebe,#fa9f9f);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #febebe;
 }
+.login_conter .warp .el-col-24 .el-form {
+  background-color: #fff !important;
+}
+/* 整个form表单 */
 .sign_in .form {
   padding: 40px !important;
   background: #fffdfd;
   margin-top: auto !important;
 }
+/* 需要填入项标题 */
 .sign_in .form label.el-form-item__label{
-  color: #12c294 !important;
+  color: #e39091 !important;
+  font-weight: 600;
 }
+/* 注册表单 */
 .register_wrap .form {
   max-height: 55vh;
   overflow: scroll !important;
@@ -73,6 +92,7 @@ html, body, #app, .page {
   height: 40px !important;
   line-height: 40px !important;
 }
+
 .forgot_wrap form,
 .login_conter form {
   display: flex;
@@ -96,7 +116,7 @@ html, body, #app, .page {
   outline: none !important;
   background: none !important;
   border: none !important;
-  color: #12c294 !important;
+  color: #f58989 !important;
   text-decoration: underline;
   /* display: block; */
   padding: 0;
@@ -116,7 +136,8 @@ html, body, #app, .page {
   margin-right: 12px !important;
   flex-shrink: 0;
   line-height: 40px;
-  color: #12c294;
+  color: #e39091;
+  font-weight: 600;
   text-shadow: 0 1px 1px hsla(240, 0%, 100%, .5);
 }
 .geetest_box_content .el-input {
@@ -376,22 +397,31 @@ header .el-dropdown-link .el-avatar {
 }
 
 /* 表格 */
+.view_a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .view_a > a {
-  line-height: 32px;
-  padding: 9px 15px !important;
-  margin: 0 !important;
-  margin-right: 10px !important;
+  line-height: 13px !important;
+  padding: 5px !important;
+  margin: 5px !important;
+  /* margin: 0 !important; */
+  /* margin-left: 0 !important;
+  margin-top: 0 !important;
+  margin-right: 0px !important;
+  margin-bottom: 5px !important; */
+  display: flex;
+  align-items: center;
 }
 
 .view_a > a > span {
   white-space: nowrap;
 }
 .view_a > a:last-child {
-  margin-top: 5px !important;
   display: inline-block;
   line-height: 1;
 }
-
 /* iframe */
 .iframe_box_top {
   font-size: 16px !important;
@@ -405,7 +435,7 @@ header .el-dropdown-link .el-avatar {
   border: 1px solid rgba(125, 125, 125, 0.25);
   box-shadow: 0 0.25rem 0.5rem 0 rgba(7, 17, 27, 0.1);
   background: var(--bg2) !important;
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 .iframe_box > div:last-child,
@@ -518,41 +548,49 @@ input[type=week] {
 
 /* button */
 .el-button, .e-button {
-  border-radius: 100px !important;
+  border-radius: 10px !important;
   width: auto !important;
   border: none !important;
   /* outline: 1px solid #fff !important; */
   /* outline-offset: -3px; */
 }
+
 .el-button--primary {
-  background-color: #3ae1fa !important;
+  /* background-color: #3ae1fa !important; */
   border-color: #3ae1fa !important;
   padding: 12px 20px !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #bebccb, #febebe) !important; 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #bebccb, #febebe) !important; 
 }
 .el-button--danger {
-	background-color: #fb7452 !important;
-	border-color: #fb7452 !important;
+	background-color: #f56d76 !important;
+	border-color: #f56d76 !important;
 	padding: 12px 20px !important;
   }
+.el-input input {
+  border-radius: 5px !important;
+}
 .el-button--default {
-  color:  #34495E !important;
+  color:  #d39aa1 !important;
   background-color: #fff !important;
-  border: 1px solid #34495E !important;
+  border: 1px solid #d39aa1 !important;
 }
 .el-button--success{
-	background-color: #58e8cc !important;
-  border-color: #58e8cc !important;
+	background-color: #75cc94 !important;
+  border-color: #75cc94 !important;
 }
 .el-button--success.is-plain,
 .el-button--primary.is-plain {
   color: #FFF !important;
-  margin: 0 10px 0 0 !important;
+  margin: 5px !important;
   border-radius: 0 !important;
 }
 
 .el-button--small {
   border-radius: 0 !important;
-  padding: 9px 10px !important;
+  padding: 5px !important;
 }
 .el-table{
   flex: none !important;
@@ -571,20 +609,27 @@ input[type=week] {
 }
 #app .page .side::before{
   content: '后台管理系统';
-  padding: 25px;
-  color: #2cbf9b;
+  padding: 16.5px 25px;
+  color: #7a7f8b;
   width: 100%;
+  font-weight: 600;
   text-align: center;
-  background-color: #313441;
+  font-size: 19px;
+  background: linear-gradient(to right,#7a7f8b, #bebccb, #febebe,#fa9f9f);
+  -webkit-background-clip: text;
+  color: transparent;
+  border-bottom: 5px solid #febebe;
 }
 #app .page .side,.el-submenu .el-menu, #app .page .side .el-menu-item, #app .page .side .el-submenu__title{
 	background-color: #12c294 !important;
 }
 #app .page .side .el-menu-item:hover, #app .page .side .el-submenu__title:hover{
 	/* background: linear-gradient(to right, #12c294 20%, #199277 ) !important; */
-  background-image: linear-gradient(to right,#0df3a3 0%,#07885b 51%,#0df3a3 100%);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  background: linear-gradient(to right, #bebccb, #febebe);
+  color: #fff !important;
+  -webkit-transition: .5s linear;
+  transition: .5s ease-out;
+  transform: scale(1.1);
 }
 .el-menu-item:hover, li.el-menu-item.is-active, .el-menu-item.is-active span {
 	color: var(--bg1) !important;
@@ -594,7 +639,8 @@ input[type=week] {
 }
 #app .page .side .el-menu-item.is-active {
   /* background: linear-gradient(to right, #12c294 20%, #199277 ) !important; */
-  background-image: linear-gradient(to right,#0df3a3 0%,#07885b 51%,#0df3a3 100%);
+  /* background-image: linear-gradient(to right,#0df3a3 0%,#07885b 51%,#0df3a3 100%); */
+  background: linear-gradient(to right, #bebccb, #febebe);
   background-size: 200% auto;
 }
 #app .page .side .el-menu-item.is-active::after {
@@ -605,14 +651,19 @@ input[type=week] {
 	color: var(--bg1) !important;
 }
 #app .page header .warp{
-	/* background: #fff; */
-  background-image: linear-gradient(to right,#546686 0%,#313441 51%,#546686 100%);
+  /* border-left: 5px solid #febebe; */
+  border-bottom: 5px solid #febebe;
+  background-color: #313441;
+
 }
 .login_conter .warp .el-col-24 .el-form {
   position: relative;
   padding-left: 400px !important;
   max-width: 700px !important;
   background: linear-gradient(to right, transparent 50%, #fff 50%);
+}
+.el-message el-message--warning {
+  background-color: #07885b !important;
 }
 
 .login_conter .warp .el-col-24 .el-form .el-form-item, .login_conter .warp .el-col-24 .el-form .geetest_box{
@@ -661,9 +712,6 @@ input[type=week] {
 	height: 100%;
 	display: flex;
 	align-items: center;
-}
-#app .page .warp .action_right .timess{
-
 }
 #app .page .warp .el-avatar{
 	border-radius: 8px !important;
@@ -728,4 +776,119 @@ input[type=week] {
 }
 .el-submenu [class^=el-icon-], .el-menu-item [class^=el-icon-]{
   color: #fff !important;
+}
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+  border-color: #696f80 !important;
+}
+#app .page .side, .el-submenu .el-menu, #app .page .side .el-menu-item, #app .page .side 
+.el-submenu__title {
+  color: #febebe !important;
+  background-color: #313441 !important;
+}
+.table_wrap .el-avatar, .table_wrap .el-image {
+  margin-top: 10px;
+}
+.el-avatar--circle {
+  border-radius: 25% !important;
+}
+.cell a {
+  color: #febebe !important;
+}
+.cell .el-image .image-slot img {
+  width: 50px !important;
+  height: 50px !important;
+}
+/* 人脸识别 */
+.face-login {
+  transform: translateX(-50%);
+  left: 50%;
+  top: 170px !important;
+  border-radius: 10px;
+}
+/* 图标的替换 */
+#app .page .side .el-menu-item .el-icon-s-home::before {
+  display: block;
+  content: '';
+  background: url(../img/computer.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+#app .page .side .el-submenu__title .el-icon-s-custom::before {
+  display: block;
+  content: '';
+  background: url(../img/people.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+#app .page .side .el-submenu__title .el-icon-news::before {
+  display: block;
+  content: '';
+  background: url(../img/trend.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+#app .page .side .el-submenu__title .el-icon-picture-outline::before {
+  display: block;
+  content: '';
+  background: url(../img/line.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+#app .page .side .el-submenu__title .el-icon-warning-outline::before {
+  display: block;
+  content: '';
+  background: url(../img/about.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+#app .page .side .el-submenu__title .el-icon-s-opportunity::before {
+  display: block;
+  content: '';
+  background: url(../img/flag.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+#app .page .side .el-submenu__title .el-icon-chat-line-round::before {
+  display: block;
+  content: '';
+  background: url(../img/plane.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+#app .page .side .el-submenu__title .el-icon-shopping-cart-2::before {
+  display: block;
+  content: '';
+  background: url(../img/shop.png) no-repeat;
+  background-size: contain; 
+  width: 20px;
+  height: 20px;
+}
+.el-pagination__editor.el-input .el-input__inner {
+  border-color: #febebe;
+}
+.el-pagination .el-select .el-input .el-input__inner {
+  border-color: #febebe;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate 
+.el-checkbox__inner {
+  background-color: #fe8a7d !important;
+  border-color: #fe8a7d !important;
+}
+.el-table thead {
+  color: #efb1b4 !important;
+  font-weight: 600 !important;
+}
+.el-table {
+  box-shadow: 0 0 10px 0 #ccc;
+  border-radius: 10px 10px 0 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #febebe !important;
 }

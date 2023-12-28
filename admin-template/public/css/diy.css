@@ -76,7 +76,7 @@ html, body, #app, .page {
   margin-top: auto !important;
 }
 .sign_in .form label.el-form-item__label{
-  color: #12c294 !important;
+  color: var(--menuBgColor) !important;
 }
 .register_wrap .form {
   max-height: 55vh;
@@ -111,7 +111,7 @@ html, body, #app, .page {
   outline: none !important;
   background: none !important;
   border: none !important;
-  color: #12c294 !important;
+  color: var(--menuBgColor) !important;
   text-decoration: underline;
   /* display: block; */
   padding: 0;
@@ -126,7 +126,7 @@ html, body, #app, .page {
   margin-right: 12px !important;
   flex-shrink: 0;
   line-height: 40px;
-  color: #12c294;
+  color: var(--menuBgColor);
   text-shadow: 0 1px 1px hsla(240, 0%, 100%, .5);
 }
 .geetest_box_content .el-input {
@@ -305,7 +305,7 @@ header .el-dropdown-link .el-avatar {
 /* 筛选表单 */
 .search_btn_wrap .search_btn_1 {
   width: 100%;
-  text-align: right;
+  /* text-align: right; */
   /* margin-left: 20px !important; */
 }
 .search_btn_wrap .search_btn_wrap_1,
@@ -463,7 +463,20 @@ header .el-dropdown-link .el-avatar {
   height: 100%;
   flex-wrap: wrap;
 }
-.edit_wrap.comtable_e .el-form, .edit_wrap.link .el-form, .edit_wrap.slides .el-form{
+.edit_wrap.comtable_e .el-form,
+.edit_wrap.link .el-form,
+.edit_wrap.slides .el-form,
+.edit_wrap.notice .el-form,
+.edit_wrap.article .el-form,
+.edit_wrap.article_type .el-form,
+.edit_wrap.exam .el-form,
+.edit_wrap.exan_subject .el-form,
+.edit_wrap.question_edit_wrap .el-form,
+.edit_wrap.forum .el-form,
+.edit_wrap.forum_type .el-form,
+.edit_wrap.exams .el-form,
+.edit_wrap.goods_type .el-form,
+.edit_wrap.ad .el-form{
   flex-direction: column;
 }
 .edit_wrap.link .el-form .row_e {
@@ -553,19 +566,19 @@ input[type=week] {
   /* outline-offset: -3px; */
 }
 .el-button--primary {
-  background-color: #3ae1fa !important;
-  border-color: #3ae1fa !important;
+  background-color: var(--textColor2) !important;
+  border-color: var(--textColor2) !important;
   padding: 12px 20px !important;
 }
 .el-button--danger {
-	background-color: #fb7452 !important;
-	border-color: #fb7452 !important;
+	background-color: #ed4014 !important;
+	border-color: #ed4014 !important;
 	padding: 12px 20px !important;
   }
 .el-button--default {
-  color:  #34495E !important;
-  background-color: #fff !important;
-  border: 1px solid #34495E !important;
+  color:  #fff !important;
+  background-color: #fe9365 !important;
+  border: 1px solid #fe9365 !important;
 }
 .el-button--success{
 	background-color: #58e8cc !important;
@@ -586,7 +599,7 @@ input[type=week] {
   flex: none !important;
 }
 .el-table a {
-  color: var(--color_info) !important;
+  color: var(--textColor2) !important;
 }
 .el-table .el-table__cell {
   padding: 5px 0 !important;
@@ -708,6 +721,21 @@ input[type=week] {
 #app .page .warp .el-col{
 	display: flex;
 	align-items: center;
+}
+#user_password .el-form, #user_info .el-form{
+  width: 100%;
+}
+#user_password .el-form .el_form_item_warp, #user_info .el-form .el_form_item_warp{
+  width: 45% !important;
+}
+#user_password .el-form .row_e, #user_info .el-form .row_e{
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#user_password .el-form .el_form_btn_warp, #user_info .el-form .el_form_btn_warp{
+  padding-top: 20px;
 }
 #app .page .warp .el-icon-menu, #app .page .warp .el-icon-s-grid{
 	color: var(--menuColor);

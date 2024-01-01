@@ -204,7 +204,7 @@
 	.list_address .bar_btn {
 		margin-top: .5rem;
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 	}
 

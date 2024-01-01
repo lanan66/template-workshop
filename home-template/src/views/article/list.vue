@@ -309,7 +309,7 @@
       margin: 1rem 0.5rem 0.5rem 0.5rem;
       display: flex;
       flex-direction: row;
-      justify-content: start;
+      justify-content: flex-start;
     }
 
     .bar_filter {

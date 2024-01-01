@@ -207,7 +207,7 @@ export default {
   z-index: 9999;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   box-shadow: #eeeeee 0 0 5px;
   margin-bottom: 10px;
   padding: 0 20px;

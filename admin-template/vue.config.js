@@ -9,7 +9,7 @@ module.exports = {
         hotOnly: false,
         proxy: {
             "~/api": {
-                target: "http://http://203.195.195.169:5000",
+                target: "http://203.195.195.169:5000",
                 ws: true,
                 changOrigin: true,
                 pathRewrite: {

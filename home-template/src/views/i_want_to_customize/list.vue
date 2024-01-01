@@ -32,7 +32,7 @@
 							<div class="view sift">
 																													<b-dropdown text="取货类别" variant="outline-dark" left>
 									<b-dropdown-item @click="filter_set('全部','pickup_category')">全部</b-dropdown-item>
-										<b-dropdown-item v-for="(o,i) in list_pickup_category" @click="filter_set(o,'pickup_category')" >
+										<b-dropdown-item :key="i" v-for="(o,i) in list_pickup_category" @click="filter_set(o,'pickup_category')" >
 										{{ o }}
 										</b-dropdown-item>
 								</b-dropdown>

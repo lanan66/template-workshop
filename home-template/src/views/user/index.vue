@@ -93,7 +93,7 @@ export default {
 .user_block {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -123,7 +123,7 @@ export default {
 .sign_in{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 5rem;
   margin-top: 100px;

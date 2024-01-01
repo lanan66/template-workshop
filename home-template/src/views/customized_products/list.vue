@@ -33,7 +33,7 @@
 							<div class="view sift">
 																										<b-dropdown text="是否特价" variant="outline-dark" left>
 									<b-dropdown-item @click="filter_set('全部','is_it_a_special_offer')">全部</b-dropdown-item>
-										<b-dropdown-item v-for="(o,i) in list_is_it_a_special_offer" @click="filter_set(o,'is_it_a_special_offer')" >
+										<b-dropdown-item v-for="(o,i) in list_is_it_a_special_offer" @click="filter_set(o,'is_it_a_special_offer')" :key="i" >
 										{{ o }}
 										</b-dropdown-item>
 								</b-dropdown>
@@ -63,7 +63,7 @@
 					<div class="col">
 						<!-- tab -->
 																																																<b-tabs content-class="mt-3">
-							<b-tab v-for="(o, i) in list_type_product_category" :title="o['product_category']" :active="i===0" @click="tab_select(o['product_category'])">
+							<b-tab v-for="(o, i) in list_type_product_category" :key="i" :title="o['product_category']" :active="i===0" @click="tab_select(o['product_category'])">
 								<div class="row">
 									<div class="col">
 										<!-- tab -->

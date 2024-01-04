@@ -29,7 +29,23 @@
 ```bash
 cd admin-template
 
+# cd home-template
+
 yarn
 
 yarn dev
 ```
+
+uniapp 模版
+
+```bash
+cd uniapp-template
+
+yarn
+
+yarn dev:mp-weixin
+```
+
+> 需要下载小程序开发工具打开项目，同时需要兼容H5、小程序、app
+
+> diy.css 在 src/static/css/目录下

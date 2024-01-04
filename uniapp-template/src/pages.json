@@ -1,0 +1,600 @@
+{
+	"topWindow": {
+		"path": "windows/page_header.vue",
+		"style": {
+			"height": "60px"
+		},
+		"matchMedia": {
+			"minWidth": 1200 //生效条件，当窗口宽度大于768px时显示
+		}
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path" : "pages/webview/webview",
+			"style" :
+			{
+				"navigationBarTitleText": "网址跳转"
+			}
+		},
+		{
+			"path" : "pages/authorization/authorization",
+			"style" :
+			{
+				"navigationBarTitleText": "QQ授权登录",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path" : "pages/authorization/authorization-weixin",
+			"style" :
+			{
+				"navigationBarTitleText": "微信授权登录",
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path" : "pages/authorization/authorization-weibo",
+			"style" :
+			{
+				"navigationBarTitleText": "微博授权登录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/comment/edit",
+			"style": {
+				"navigationBarTitleText": "评论"
+			}
+		},
+		{
+			"path": "pages/comment/view",
+			"style": {
+				"navigationBarTitleText": "查看评论"
+			}
+		},
+		{
+			"path" : "pages/Intelligent-customer-service/Intelligent-customer-service",
+			"style" :
+			{
+				"navigationBarTitleText": "智能机器人",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/media/music",
+			"style": {
+				"navigationBarTitleText": "音乐",
+				"backgroundColor": "#000000"
+			}
+		}, {
+			"path": "pages/media/image",
+			"style": {
+				"navigationBarTitleText": "图片预览",
+				"backgroundColor": "#000000"
+			}
+		}, {
+			"path": "pages/media/video",
+			"style": {
+				"navigationBarTitleText": "视频",
+				"backgroundColor": "#000000"
+			}
+		}, {
+			"path": "pages/account/forgot",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		}, {
+			"path": "pages/account/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/account/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/article/list",
+			"style": {
+				"navigationBarTitleText": "商城资讯"
+			}
+		},{
+			"path": "pages/article/index",
+			"style": {
+				"navigationBarTitleText": "商城资讯列表"
+			}
+		}, {
+			"path": "pages/article/details",
+			"style": {
+				"navigationBarTitleText": "商城资讯详情"
+			}
+		},
+		{
+			"path": "pages/forum/index",
+			"style": {
+				"navigationBarTitleText": "交流论坛"
+			}
+		}, {
+			"path": "pages/forum/list",
+			"style": {
+				"navigationBarTitleText": "交流论坛列表"
+			}
+		}, {
+			"path": "pages/forum/details",
+			"style": {
+				"navigationBarTitleText": "交流论坛详情"
+			}
+		}, {
+			"path": "pages/forum/view",
+			"style": {
+				"navigationBarTitleText": "发布内容"
+			}
+		},
+		{
+			"path": "pages/forum/table",
+			"style": {
+				"navigationBarTitleText": "论坛管理"
+			}
+		},
+		{
+			"path": "pages/forum/edit",
+			"style": {
+				"navigationBarTitleText": "论坛详情"
+			}
+		},
+		{
+			"path": "pages/forum/add",
+			"style": {
+				"navigationBarTitleText": "论坛添加"
+			}
+		},
+		{
+			"path": "pages/comment/table",
+			"style": {
+				"navigationBarTitleText": "评论管理"
+			}
+		},
+		// 考试路由
+		{
+			"path": "pages/exam/list",
+			"style": {
+				"navigationBarTitleText": "在线考试列表"
+			}
+		},
+		{
+			"path": "pages/exam/details",
+			"style": {
+				"navigationBarTitleText": "在线考试详情"
+			}
+		},
+		{
+			"path": "pages/goods/list",
+			"style": {
+				"navigationBarTitleText": "产品展示"
+			}
+		}, {
+			"path": "pages/goods/details",
+			"style": {
+				"navigationBarTitleText": "产品详情"
+			}
+		}, {
+			"path": "pages/cart/index",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/cart/list",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		}, {
+			"path": "pages/order/list",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		}, {
+			"path": "pages/order/details",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/pay/index",
+			"style": {
+				"navigationBarTitleText": "支付"
+			}
+		},
+			{
+			"path": "pages/logistics_delivery/table",
+			"style": {
+				"navigationBarTitleText": "订单配送列表"
+			}
+		},
+		{
+			"path": "pages/logistics_delivery/view",
+			"style": {
+				"navigationBarTitleText": "订单配送详情"
+			}
+		},
+		{
+			"path": "pages/user/address",
+			"style": {
+				"navigationBarTitleText": "收货地址"
+			}
+		}, {
+			"path": "pages/user/address_edit",
+			"style": {
+				"navigationBarTitleText": "收货地址管理"
+			}
+		},
+			{
+			"path": "pages/notice/list",
+			"style": {
+				"navigationBarTitleText": "关于我们列表"
+			}
+		},
+		{
+			"path": "pages/notice/details",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/message/list",
+			"style": {
+				"navigationBarTitleText": "测试留言板列表"
+			}
+		},
+		{
+			"path": "pages/message/edit",
+			"style": {
+				"navigationBarTitleText": "测试留言板"
+			}
+		},
+		{
+			"path": "pages/message/table",
+			"style": {
+				"navigationBarTitleText": "测试留言板管理"
+			}
+		},
+		{
+			"path": "pages/message/view",
+			"style": {
+				"navigationBarTitleText": "测试留言板详情"
+			}
+		},
+		{
+			"path" : "pages/webview/urlview",
+			"style" :
+			{
+				"navigationBarTitleText": "天气预报"
+			}
+		},
+										// 商城中心列表路由
+		{
+			"path": "pages/mall_center/list",
+			"style": {
+				"navigationBarTitleText": "商城中心列表"
+			}
+		},
+				// 商城中心详情路由
+		{
+			"path": "pages/mall_center/details",
+			"style": {
+				"navigationBarTitleText": "商城中心"
+			}
+		},
+					// 定制商品列表路由
+		{
+			"path": "pages/customized_products/list",
+			"style": {
+				"navigationBarTitleText": "定制商品列表"
+			}
+		},
+				// 定制商品详情路由
+		{
+			"path": "pages/customized_products/details",
+			"style": {
+				"navigationBarTitleText": "定制商品"
+			}
+		},
+				// 我要定制编辑路由
+		{
+			"path": "pages/i_want_to_customize/edit",
+			"style": {
+				"navigationBarTitleText": "我要定制"
+			}
+		},
+				// 我要定制列表路由
+		{
+			"path": "pages/i_want_to_customize/list",
+			"style": {
+				"navigationBarTitleText": "我要定制列表"
+			}
+		},
+					// 分类信息编辑路由
+		{
+			"path": "pages/classification_information/edit",
+			"style": {
+				"navigationBarTitleText": "分类信息"
+			}
+		},
+				// 分类信息列表路由
+		{
+			"path": "pages/classification_information/list",
+			"style": {
+				"navigationBarTitleText": "分类信息列表"
+			}
+		},
+						// 网站公告列表路由
+		{
+			"path": "pages/website_announcement/list",
+			"style": {
+				"navigationBarTitleText": "网站公告列表"
+			}
+		},
+				// 网站公告详情路由
+		{
+			"path": "pages/website_announcement/details",
+			"style": {
+				"navigationBarTitleText": "网站公告"
+			}
+		},
+					// 热卖图书列表路由
+		{
+			"path": "pages/hot_selling_books/list",
+			"style": {
+				"navigationBarTitleText": "热卖图书列表"
+			}
+		},
+				// 热卖图书详情路由
+		{
+			"path": "pages/hot_selling_books/details",
+			"style": {
+				"navigationBarTitleText": "热卖图书"
+			}
+		},
+				// 商城用户列表路由
+		{
+			"path": "pages/mall_users/table",
+			"style": {
+				"navigationBarTitleText": "商城用户列表"
+			}
+		},
+		// 商城用户编辑路由
+		{
+			"path": "pages/mall_users/view",
+			"style": {
+				"navigationBarTitleText": "商城用户详情"
+			}
+		},
+				// 卖家列表路由
+		{
+			"path": "pages/seller/table",
+			"style": {
+				"navigationBarTitleText": "卖家列表"
+			}
+		},
+		// 卖家编辑路由
+		{
+			"path": "pages/seller/view",
+			"style": {
+				"navigationBarTitleText": "卖家详情"
+			}
+		},
+					// 定制商品列表路由
+		{
+			"path": "pages/customized_products/table",
+			"style": {
+				"navigationBarTitleText": "定制商品列表"
+			}
+		},
+		// 定制商品编辑路由
+		{
+			"path": "pages/customized_products/view",
+			"style": {
+				"navigationBarTitleText": "定制商品详情"
+			}
+		},
+				// 我要定制列表路由
+		{
+			"path": "pages/i_want_to_customize/table",
+			"style": {
+				"navigationBarTitleText": "我要定制列表"
+			}
+		},
+		// 我要定制编辑路由
+		{
+			"path": "pages/i_want_to_customize/view",
+			"style": {
+				"navigationBarTitleText": "我要定制详情"
+			}
+		},
+				// 分类信息列表路由
+		{
+			"path": "pages/classification_information/table",
+			"style": {
+				"navigationBarTitleText": "分类信息列表"
+			}
+		},
+		// 分类信息编辑路由
+		{
+			"path": "pages/classification_information/view",
+			"style": {
+				"navigationBarTitleText": "分类信息详情"
+			}
+		},
+				// 网站公告列表路由
+		{
+			"path": "pages/website_announcement/table",
+			"style": {
+				"navigationBarTitleText": "网站公告列表"
+			}
+		},
+		// 网站公告编辑路由
+		{
+			"path": "pages/website_announcement/view",
+			"style": {
+				"navigationBarTitleText": "网站公告详情"
+			}
+		},
+				// 热卖图书列表路由
+		{
+			"path": "pages/hot_selling_books/table",
+			"style": {
+				"navigationBarTitleText": "热卖图书列表"
+			}
+		},
+		// 热卖图书编辑路由
+		{
+			"path": "pages/hot_selling_books/view",
+			"style": {
+				"navigationBarTitleText": "热卖图书详情"
+			}
+		},
+		{
+		"path": "pages/exam_subject/answer_wrong_table",
+		"style": {
+			"navigationBarTitleText": "错题列表"
+		}
+	},
+	{
+		"path": "pages/exam_subject/answer_wrong_detail",
+		"style": {
+			"navigationBarTitleText": "错题详情"
+		}
+	},
+	{
+		"path": "pages/exam_subject/list",
+		"style": {
+			"navigationBarTitleText": "考试列表"
+		}
+	},
+	{
+		"path": "pages/exam_subject/details",
+		"style": {
+			"navigationBarTitleText": "考试详情"
+		}
+	},
+		{
+			"path": "pages/user/collect",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+	{
+		"path": "pages/novel_chapters/table",
+		"style": {
+			"navigationBarTitleText": "章节列表"
+		}
+	},
+	{
+		"path": "pages/novel_chapters/view",
+		"style": {
+			"navigationBarTitleText": "章节详情"
+		}
+	},
+	{
+		"path": "pages/novel_chapters/read",
+		"style": {
+			"navigationBarTitleText": "章节阅读"
+		}
+	},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我"
+			}
+		}, {
+			"path": "pages/user/password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		}, {
+			"path": "pages/user/info",
+			"style": {
+				"navigationBarTitleText": "基本信息"
+			}
+		}
+		,{
+			"path" : "pages/user_center/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		            
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "长盛",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#3388FF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/img/home_a.png",
+				"selectedIconPath": "static/img/home_b.png"
+			},
+			{
+				"pagePath": "pages/cart/index",
+				"text": "购物车",
+				"iconPath": "static/img/cart_a.png",
+				"selectedIconPath": "static/img/cart_b.png"
+			},
+			{
+				"pagePath": "pages/forum/index",
+				"text": "交流论坛",
+				"iconPath": "static/img/forum_a.png",
+				"selectedIconPath": "static/img/forum_b.png"
+			},
+			{
+				"pagePath": "pages/article/index",
+				"text": "商城资讯",
+				"iconPath": "static/img/article_a.png",
+				"selectedIconPath": "static/img/article_b.png"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"text": "我的",
+				"iconPath": "static/img/my_a.png",
+				"selectedIconPath": "static/img/my_b.png"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^mm_(.*)": "@/components/mm_vue_ui/base/mm_$1.vue"
+		}
+	}
+}
